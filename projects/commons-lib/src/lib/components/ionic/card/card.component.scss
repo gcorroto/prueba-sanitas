@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+}
+ion-fab-button {
+  margin: 2%;
+  position: absolute;
+}
+.card-wrap {
+  // margin: 10px;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  &:hover {
+    .card {
+      transition: var(--san-pt-transition);
+      box-shadow: rgba(white, 0.2) 0 0 40px 5px, rgba(#6f4fff, 1) 0 0 0 1px,
+        rgba(#134b85, 0.66) 0 30px 30px 0, inset #215892 0 0 0 5px,
+        inset #aa9df7 0 0 0 6px;
+    }
+  }
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 2px;
+  transition: var(--san-pt-transition);
+}

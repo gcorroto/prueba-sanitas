@@ -1,0 +1,18 @@
+<ion-item [formGroup]="form" class="ion-no-padding">
+  <ion-label position="floating" class="ion-label"><ion-icon [name]="icon" color="label" slot="start"></ion-icon>{{label | titlecase}}</ion-label>
+  <ion-input [icon]="icon" [name]="label" [type]="type" [id]="label" [formControlName]="controlName" ngDefaultControl></ion-input>
+</ion-item>
+<!-- Error messages -->
+
+<span class="error" *ngIf="isSubmitted && errorControl[controlName].hasError('required')">
+  <ion-icon name="alert" color="danger"></ion-icon>
+  El campo {{label}} es requerido
+</span>
+<span class="error" *ngIf="isSubmitted && errorControl[controlName].hasError('minlength')">
+  <ion-icon name="alert" color="danger"></ion-icon>
+  {{label}} debe tener una longitud mínima de 5 caracteres.
+</span>
+<span class="error" *ngIf="isSubmitted && errorControl[controlName].hasError('pattern')">
+  <ion-icon name="alert" color="danger"></ion-icon>
+  {{label}} debe tener un formato válido.
+</span>

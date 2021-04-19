@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="container_row">
+   <div class="panel card">
+     <div class="card_header">
+      <img class="card_avatar" *ngIf="srcHeader" [src]="srcHeader"/>
+      <h1 class="card_title">{{title}}</h1>
+     </div>
+     <div class="card_form">
+      <ng-content select="[cardContent]"></ng-content>
+       <div>
+        <ng-content select="[cardFooter]"></ng-content>
+       </div>
+     </div>
+   </div>
+  </div>
+</div>

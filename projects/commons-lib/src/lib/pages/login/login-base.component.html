@@ -1,0 +1,15 @@
+
+<san-pt-layout title="Prueba técnica" srcHeader="../assets/img/logo.jpg">
+  <form layoutContent [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <san-pt-card  title="Prueba técnica" srcHeader="../assets/img/logo.jpg" >
+        <ng-container cardContent  class="card_body">
+          <san-pt-input [isSubmitted]="isSubmitted" [icon]="iconEmail" label="email" [form]="loginForm" controlName="email" type="text"></san-pt-input>
+          <san-pt-input [isSubmitted]="isSubmitted" [icon]="iconPassword" label="contraseña" [form]="loginForm" controlName="password" type="password"></san-pt-input>
+          <san-pt-toggle label="recordar" [form]="loginForm" controlName="remember"></san-pt-toggle>
+        </ng-container>
+        <div class="card_footer" cardFooter>
+          <san-pt-button size="large" type="submit" [disabled]="false" expand="block" label="Acceder"></san-pt-button>
+        </div>
+    </san-pt-card>
+  </form>
+</san-pt-layout>

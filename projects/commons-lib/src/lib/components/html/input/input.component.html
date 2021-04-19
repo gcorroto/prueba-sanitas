@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label class="control-label" [for]="label">{{ label | titlecase }}</label>
+  <div  [formGroup]="form" >
+    <input [type]="type" placeholder="&#xF002; Search" [id]="label" [formControlName]="controlName" class="form-control" style="font-family:Arial, FontAwesome">
+  </div >
+</div>

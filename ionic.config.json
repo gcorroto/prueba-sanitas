@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "angular-ionic-browser": {
+      "name": "appAngular",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects\\appAngular"
+    },
+    "ionic-angular-browser": {
+      "name": "ionic-angular-browser",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects\\ionic-angular-browser"
+    },
+    "ionic-angular-mobile": {
+      "name": "ionic-angular-mobile",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "angular",
+      "root": "projects\\ionic-angular-mobile"
+    }
+  }
+}

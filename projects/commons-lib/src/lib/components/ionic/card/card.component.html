@@ -1,0 +1,14 @@
+<ion-grid class="container panel">
+  <ion-row  [ngClass]="{'container_row': true, 'card-wrap ': animacion}" color="primary" justify-content-center>
+    <ion-col #card class="card" align-self-center [ngStyle]="cardStyle()">
+      <div class="card_header" text-center>
+        <ion-img class="card_avatar" [src]="srcHeader"></ion-img>
+        <h1 class="card_title">{{title}}</h1>
+      </div >
+        <ng-content select="[cardContent]"></ng-content>
+        <ng-content select="[cardFooter]"></ng-content>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+  <ion-fab-button  slot="fixed" (click)="animacion = !animacion;" color="light">{{animacion ? 'Quitar' :  'Animar'}}</ion-fab-button>

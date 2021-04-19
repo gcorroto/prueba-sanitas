@@ -1,0 +1,4 @@
+<ion-item [formGroup]="form" lines="none" class="ion-no-padding">
+  <ion-label>{{label | titlecase}}</ion-label>
+  <ion-toggle  [id]="label" (ionChange)="changeValue();" [formControlName]="controlName" [checked]="form.controls[controlName].value" ngDefaultControl color="primary"></ion-toggle>
+</ion-item>

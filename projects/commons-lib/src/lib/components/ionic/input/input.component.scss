@@ -1,0 +1,18 @@
+.ion-label {
+    color: var(--ion-color-label);
+    font-size: var(--font-base);
+    line-height: 1;
+
+    ion-icon {
+        font-size: 20px;
+        margin-right: 20px;
+        opacity: .5;
+        vertical-align: bottom;
+    }
+}
+
+.error {
+    color: var(--san-pt-warning);
+    font-size: var(--font-base);
+    margin-top: 5px;
+}

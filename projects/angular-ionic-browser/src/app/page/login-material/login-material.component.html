@@ -1,0 +1,32 @@
+<div class="bg-img">
+<!-- fxFlex="25" fxFlexOffset="37.5"  -->
+  <div >
+
+    <!-- OPCION 2 CON MATERIAL Y FLEX -->
+
+    <san-pt-card title="Prueba técnica" srcHeader="../assets/img/logo.jpg" >
+
+      <form cardContent [formGroup]="loginForm" class="form" (ngSubmit)="onSubmit()">
+        <div cardContent>
+          <div  class="form-group ">
+            <label class="control-label" for="email">Email:</label>
+            <div >
+              <input type="email" id="email" formControlName="email" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="password">Password:</label>
+            <div >
+              <input type="password" id="password" formControlName="password" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div cardFooter>
+          <button  mat-flat-button color="primary">Acceder</button>
+        </div>
+      </form>
+
+    </san-pt-card>
+
+  </div>
+</div>

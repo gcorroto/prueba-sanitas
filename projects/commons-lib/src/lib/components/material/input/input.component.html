@@ -1,0 +1,11 @@
+<mat-form-field class="example-full-width">
+
+  <mat-label><mat-icon matSuffix>{{icon}}</mat-icon>{{label}}</mat-label>
+    <div  [formGroup]="form" >
+      <input [type]="type" [id]="label" matInput [formControlName]="controlName" [placeholder]="label | titlecase" >
+    </div >
+    <!-- <mat-hint>Errors appear instantly!</mat-hint>
+    <mat-error *ngIf="form.hasError(label)">
+      Please enter a valid email address
+    </mat-error> -->
+  </mat-form-field>

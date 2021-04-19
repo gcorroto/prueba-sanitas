@@ -1,0 +1,22 @@
+input {
+  padding-left: unset;
+  padding-right: unset;
+  padding-inline-start: calc(var(--padding-start) + var(--ion-safe-area-left, 0px));
+  padding-inline-end: var(--padding-end);
+  border-radius: var(--border-radius);
+  margin: 0px;
+  padding-left: calc(var(--padding-start) + var(--ion-safe-area-left, 0px));
+  padding-right: var(--padding-end);
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: var(--min-height);
+  transition: var(--transition);
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  outline: none;
+  box-sizing: border-box;
+}

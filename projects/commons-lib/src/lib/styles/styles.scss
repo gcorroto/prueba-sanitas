@@ -1,0 +1,139 @@
+:root {
+  --san-pt-blue: #0961bb;
+  --ion-color-label: #6f6f6f;
+  --san-pt-warning: #cc0000;
+  --san-pt-white: #FFF;
+  --san-pt-black: #000;
+  --font-base: 14px;
+  --icon-color: #adadad;
+  --san-pt-transition: ease-out .1s all;
+}
+
+.bg-img {
+  height: 100vh;
+  --background: var(--san-pt-white) url('/assets/img/background.jpg') no-repeat center center / cover;
+}
+
+:host {
+  --breakpoint: 960px;
+}
+
+
+/* Buutons */
+ion-button {
+  --box-shadow:none;
+}
+
+
+@media (min-width: 960px) {
+
+
+  ion-button::part(native) {
+    border-radius: 25px;
+    border: 2px solid var(--san-pt-blue);
+    background: var(--san-pt-white);
+    color: var(--san-pt-black);
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: none;
+    padding: 12px 40px;
+    box-shadow: none;
+    line-height: 1;
+    height: auto;
+    transition: var(--san-pt-transition);
+  }
+
+  ion-button:hover::part(native) {
+    background-color: var(--san-pt-blue);
+    color: var(--san-pt-white);
+  }
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_row {
+      margin-top: 145px;
+      width: 400px;
+    }
+  }
+
+  .card {
+    padding: 40px 20px 0;
+    background-color: var(--san-pt-white);
+
+    &_avatar {
+      display: inline-block;
+      height: 120px;
+      object-fit: cover;
+      width: 120px;
+    }
+    &_header {
+      text-align: center;
+    }
+
+    &_title {
+      color: var(--san-pt-black);
+      font-weight: 500;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    &_body {
+      padding: 25px
+    }
+
+    &_footer {
+      margin: 25px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 959px) {
+  ion-button {
+    --border-radius: 0px;
+    margin: 0px 0px;
+    width: 100%;
+    text-transform: none;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+
+    &_row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .card {
+    background-color: transparent;
+    padding: 40px 10px 10px 10px;
+
+    &_avatar {
+      height: 200px;
+      object-fit: cover;
+      object-position: 0 0;
+      padding: 30px 30px 35px 30px;
+      width: 200px;
+    }
+    &_header {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &_form {
+      background-color: var(--san-pt-white);
+    }
+    &_title {
+      display: none;
+    }
+  }
+}
+
