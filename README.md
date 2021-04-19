@@ -2,7 +2,7 @@
 
 Multiproyecto Angular/Ionic de la prueba técnica.
 
-Se ha escogido este formato de arquetipo por su capacidad de reutilización a la hora de componetizar la prueba técnica, como también su capacidad de centralizar configuraciones de angular y de karma directorios de recursos etc.
+Se ha escogido este formato de arquetipo por su capacidad de reutilización a la hora de componetizar la prueba técnica, como también su capacidad de centralizar configuraciones de angular y de karma, directorios de recursos etc.
 
 El proyecto consta de 4 subproyectos.
 
@@ -29,9 +29,9 @@ Proyecto Angular que hace uso del proyecto commons-lib no tiene dependencia dire
 
 Consta de 3 rutas en la que haciendo uso de un módulo u otro se inyecta:
 
-login-html: html simple con iconos de FontAwesome a través de CDN.
-login-material: etiquetas html de angular material con iconos de propios de material a través de dependencia npm.
-login-ionic: etiquetas html de ionic con iconos de ionicon a través de CDN.
+- login-html: html simple con iconos de FontAwesome a través de CDN. (sin terminar de maquetar)
+- login-material: etiquetas html de angular material con iconos de propios de material a través de dependencia npm. (sin terminar de maquetar)
+- login-ionic: etiquetas html de ionic con iconos de ionicon a través de CDN. (maquetado)
 
 ### Comandos
 ```
@@ -44,9 +44,9 @@ start: npm run start:aib ng serve angular-ionic-browser
 
 ## ionic-angular-browser
 
-Proyecto Ionic/Angular que hace uso del proyecto commons-lib tiene dependencia directa con @ionic/angular (npm dependency) en tiempo de compilación.
+Proyecto Ionic/Angular que hace uso del proyecto commons-lib, tiene dependencia directa con @ionic/angular (npm dependency) en tiempo de compilación.
 
-Consta de 1 ruta autoresuelta haciendo uso del módulo de commons-lib:
+Consta de 1 ruta autoresuelta haciendo uso del módulo LoginPage de la aplicación:
 
 login: etiquetas html de ionic con iconos de ionicon resueltas a través del módulo IonicModule inyectado en el core de la aplicación.
 
@@ -64,13 +64,7 @@ start: npm run start:iab ng serve ionic-angular-browser
 
 ## ionic-angular-mobile
 
-Proyecto Ionic/Angular que hace uso del proyecto commons-lib tiene dependencia directa con @ionic/angular (npm dependency) en tiempo de compilación.
-
-Consta de 1 ruta autoresuelta haciendo uso del módulo de commons-lib:
-
-login: etiquetas html de ionic con iconos de ionicon resueltas a través del módulo IonicModule inyectado en el core de la aplicación.
-
-El proyecto tiene configurado capacitor tanto para android como para ios.
+Proyecto Ionic/Angular identico al anterior pero hace uso directo de la cli de ionic y el proyecto tiene configurado capacitor tanto para android como para ios.
 
 ### Comandos
 ```
@@ -95,11 +89,11 @@ Full start: npm run start:full
 
 ## Contenido
 
-El contenido de la aplicación, consta de una página representada y con la funcionalidad solicitada cogiendo como referencia la imagen dispuesta en la prueba técnica.
+El contenido de la aplicación, consta de una página representada con la funcionalidad solicitada, cogiendo como referencia la imagen dispuesta en la prueba técnica.
 
 ## Mejoras
 
-Aunque se escapa de del alcance de la prueba de concepto, suelo aplicar en todos los proyectos angular aunque no este el caso por su naturaleza multiproyecto, las siguientes configuraciones.
+Aunque se escapa del alcance de la prueba de concepto, suelo aplicar en todos los proyectos angular aunque no este el caso por su naturaleza multiproyecto, las siguientes configuraciones.
 
 autoversionado incremental semántico condicionado por rama de git con semver ('beta' develop, pacth master).
 husky git hooks pre-commit con lint, test --onlyChanged y autoversionado.
