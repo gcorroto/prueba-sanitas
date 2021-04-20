@@ -1,0 +1,32 @@
+ion-button {
+  --box-shadow:none;
+}
+@media (min-width: 960px) {
+  ion-button::part(native) {
+      border-radius: 25px;
+      border: 2px solid var(--san-pt-blue);
+      background: var(--san-pt-white);
+      color: var(--san-pt-black);
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: none;
+      padding: 12px 40px;
+      box-shadow: none;
+      line-height: 1;
+      height: auto;
+      transition: var(--san-pt-transition);
+  }
+  ion-button:hover::part(native) {
+      background-color: var(--san-pt-blue);
+      color: var(--san-pt-white);
+  }
+}
+@media (max-width: 949px) {
+  ion-button {
+      --border-radius: 0;
+      margin: 0;
+      width: 100%;
+      --background: var(--san-pt-blue);
+      text-transform: none;
+  }
+}
