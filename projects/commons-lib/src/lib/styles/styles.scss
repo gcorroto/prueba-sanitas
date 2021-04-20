@@ -17,7 +17,6 @@
   justify-content: center;
   &_row {
     margin-top: 145px;
-    width: 400px;
   }
 }
 .card {
@@ -47,10 +46,19 @@
     text-align: center;
   }
 }
+
+@media (min-width: 960px) {
+  .container {
+    &_row {
+      width: 400px;
+    }
+  }
+}
 @media (max-width: 959px) {
   .container {
     &_row {
-      margin-top: 40px;
+      width: 100%;
+      margin: 40px 20px 0px 20px;
     }
   }
   .card {
