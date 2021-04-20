@@ -1,3 +1,18 @@
+:host {
+  --san-pt-handle:177,177,181;
+}
 ion-label {
-    font-weight: 500;
+  font-weight: 500;
+}
+ion-toggle {
+  --handle-background: rgb(var(--san-pt-handle));
+  --background: rgba(var(--san-pt-handle), .5);
+  --handle-background-checked: var(--san-pt-blue);
+  padding-right: 0;
+}
+ion-item {
+  --inner-padding-end: 0;
+  --inner-padding-start: 0;
+  --padding-end: 0;
+  --padding-start: 0;
 }
